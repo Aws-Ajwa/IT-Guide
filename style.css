@@ -40,6 +40,40 @@ body{
     transform: rotate(1turn);
   }
 }
+.fade-in-text {
+  font-family: Arial;
+  font-size: 60px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 .topnav {
     overflow: hidden;
@@ -80,6 +114,7 @@ body{
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 1;
         
     }
   
@@ -93,6 +128,7 @@ body{
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 1;
     }
   }
   
@@ -165,4 +201,20 @@ img{
 img:hover{
     transform: scale(1.1);
     transition: 0.5s;
+}
+/* 
+animation for the content
+*/
+@media(prefers-reduced-motion){
+  .hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100px);
+    transition: all 1s;
+    }
+    .show{
+      opacity: 1;
+      filter: blur(0px);
+      transform: translateX(0);
+    }
 }

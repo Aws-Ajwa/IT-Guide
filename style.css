@@ -3,7 +3,8 @@ body{
     padding: 0;
     background-color: #f4f4f4;
     overflow-x: hidden;
-}.loader {
+}
+.loader {
   position: fixed;
   top: 0;
   left: 0;

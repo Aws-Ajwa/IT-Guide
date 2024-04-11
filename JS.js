@@ -1,4 +1,13 @@
-
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+  
  $('.autoplay').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -17,4 +26,3 @@
       x.className = "topnav";
     }
   }
- 

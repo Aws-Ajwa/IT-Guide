@@ -3,11 +3,50 @@ body{
     padding: 0;
     background-color: #f4f4f4;
     overflow-x: hidden;
+}.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
 }
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #05039b;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 .topnav {
     overflow: hidden;
     background-color: #003cff;
     margin-top: -8px;
+  }
+  .topnav-right{
+    margin-left: 12rem;
   }
   
   .topnav a {
@@ -44,7 +83,7 @@ body{
     }
   
   @media screen and (max-width: 1155px) {
-    .topnav a:not(:first-child) {display: none;}
+    .topnav-right a{display: none;}
     .topnav a.icon {
       float: right;
       display: block;
@@ -73,6 +112,7 @@ body{
         text-align: left;
       }
       .topnav.responsive .dropdown {float: none;}
+      .topnav-right.responsive .dropdown {float: none;}
       .topnav.responsive .dropdown-content {position: relative;}
       .topnav.responsive .dropdown .dropbtn {
         display: block;
@@ -91,7 +131,6 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     height: 551px;
-    margin-top: -40px;
     margin-left: -20px;
     background-size:cover;
 }

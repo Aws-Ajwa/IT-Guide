@@ -2,7 +2,7 @@
 courses cards
 */
     :root {
-        --surface-color: #fff;
+        --surface-color: #000000;
         --curve: 40;
       }
       
@@ -13,9 +13,21 @@ courses cards
       body {
         font-family: 'Noto Sans JP', sans-serif;
         background-color: #fef8f8;
+        background-image: url('Images\sePage.jpg');        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .bgImg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        
       }
       /* make the page similar to index.html */
-      h1 {
+      h1,h3 {
         font-size: 2em;
         text-align: center;
         margin: 2em 0;
@@ -28,7 +40,18 @@ courses cards
         margin: 0 0 2em;
         color: #000000;
         font-family: "MockFlowFont";
-      }      
+      }   
+      
+      /* make all have a back ground */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2em;
+        background-color: moccasin;
+        opacity: 0.8;
+        
+      }
+     
       /* courses as cards */
       .cards {
         display: grid;

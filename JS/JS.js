@@ -32,8 +32,6 @@ function myFunction() {
 //animation
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    const square = entry.target.querySelector('.square');
-
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
     } else {

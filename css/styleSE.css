@@ -55,7 +55,7 @@ courses cards
       /* courses as cards */
       .cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
         gap: 2rem;
         margin: 4rem 5vw;
         padding: 0;
@@ -73,7 +73,7 @@ courses cards
       
       .card__image {      
         width: 100%;
-        height: auto;
+        height: 315px;
       }
       
       .card__overlay {

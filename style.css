@@ -3,25 +3,29 @@
     background: url(Images/main.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 400px;
+    height: 40rem;
     margin-left: -20px;
     background-size:cover;
 }
 #container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-left:-7rem
 }
 p{
     color: white;
 }
 p#FUELS{
   padding-right: 60px;
+  margin-left: 7rem;
+  margin-top: 4rem;
 }
 p#FUELS , #CIPHERS{
     margin-top: 10rem;
     padding-left: 60px;
-    
     font-size: 40px;
 }
 #cyber, #AI, #cs, #SE{

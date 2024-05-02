@@ -40,6 +40,7 @@ courses cards
         margin: 0 0 2em;
         color: #000000;
         font-family: "MockFlowFont";
+        display: inline-block;
       }   
       
       /* make all have a back ground */
